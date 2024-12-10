@@ -1,0 +1,33 @@
+.main-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 64px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 128px;
+
+  .tickets-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden scroll;
+    position: relative;
+    padding-bottom: 64px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+      border-radius: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #EBEBEB;
+      border-radius: 20px;
+    }
+  }
+}
